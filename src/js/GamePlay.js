@@ -1,5 +1,5 @@
-import Board from '../js/Board.js';
-import Clicker from '../js/Clicker.js';
+import Board from './Board';
+import Clicker from './Clicker';
 
 export default class GamePlay {
   constructor() {

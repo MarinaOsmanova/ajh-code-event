@@ -56,7 +56,7 @@ export default class Board {
 
   stopGame() {
     clearInterval(this.intervalId);
-    document.querySelector('h1').innerHTML = "Game Over";
+    document.querySelector('h1').innerHTML = 'Game Over';
   }
 
   onCharacterClick(event) {
@@ -73,7 +73,7 @@ export default class Board {
     }
 
     const index = this.cells.indexOf(event.currentTarget);
-    if (index == this.currentPosition) {
+    if (index === this.currentPosition) {
       this.clicker.successClick();
       this.hideCharacter();
     } else {
@@ -85,13 +85,13 @@ export default class Board {
   }
 }
 
-//const cursor = document.querySelector(".cursor");
+// const cursor = document.querySelector(".cursor");
 
-//const mouseMove = function (e) {
-  //let x = e.clientX;
-  //let y = e.clientY;
-  //cursor.style.left = x + "px";
-  //cursor.style.top = y + "px";
-//};
+// const mouseMove = function (e) {
+// let x = e.clientX;
+// let y = e.clientY;
+// cursor.style.left = x + "px";
+// cursor.style.top = y + "px";
+// };
 
-//document.addEventListener("mousemove", mouseMove);
+// document.addEventListener("mousemove", mouseMove);

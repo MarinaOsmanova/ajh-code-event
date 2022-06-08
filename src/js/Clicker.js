@@ -8,12 +8,12 @@ export default class Clicker {
   }
 
   successClick() {
-    this.successClickCount++;
+    this.successClickCount += 1;
     this.successCounter.innerHTML = this.successClickCount;
   }
 
   missingClick() {
-    this.missingClickCount++;
+    this.missingClickCount += 1;
     this.missingCounter.innerHTML = this.missingClickCount;
   }
 
