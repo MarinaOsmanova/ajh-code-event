@@ -59,14 +59,6 @@ export default class Board {
     document.querySelector('h1').innerHTML = 'Game Over';
   }
 
-  onCharacterClick(event) {
-    if (this.clicker.gameIsOver()) {
-      return;
-    }
-    this.clicker.successClick();
-    this.hideCharacter();
-  }
-
   onCellClick(event) {
     if (this.clicker.gameIsOver()) {
       return;
